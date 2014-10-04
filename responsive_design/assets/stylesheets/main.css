@@ -1,0 +1,459 @@
+/*
+  ========================================
+  Reset
+  ========================================
+*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  ========================================
+  General
+  ========================================
+*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: rgb(78, 88, 96);
+  background-color: rgb(248, 249, 250);
+}
+
+/*
+  ========================================
+  Header
+  ========================================
+*/
+.main-header {
+  height: 50px;
+  width: 100%;
+  border-bottom: 2px solid rgb(217, 224, 226);
+  position: relative;
+  background-color: white;
+}
+.logo-holder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 13px 12px;
+}
+.logo-holder img {
+  height: 23px;
+}
+.main-header p {
+  padding-left: 70px;
+  color: #ff3c1f;
+  text-transform: uppercase;
+  height: 48px;
+  text-align: center;
+  font: normal 700 42px 'Source Sans Pro', sans-serif;
+}
+
+/*
+  ========================================
+  Sidebar
+  ========================================
+*/
+.sidebar {
+  height: 100%;
+  width: 325px;
+  border-right: 1px solid #d9e0e2;
+  position: absolute;
+  left: 0;
+  top: 50px;
+  background-color: white;
+}
+.sidebar p {
+  color: #ff3c1f;
+  text-transform: uppercase;
+  margin-top: 30px;
+  text-align: center;
+  font: normal 400 42px 'Source Sans Pro', sans-serif;
+}
+
+/*
+  ========================================
+  Stories
+  ========================================
+*/
+.stories {
+  margin-left: 325px;
+  padding-top: 22px;
+}
+.stories-wrapper {
+  margin: 0 auto;
+  max-width: 800px;
+}
+.ad {
+  max-width: 800px;
+  height: 140px;
+  padding-bottom: 22px;
+  clear: both;
+}
+.ad a {
+  text-decoration: none;
+}
+.ad-wrapper {
+  margin: 0 auto;
+  max-width: 728px;
+}
+.ad-holder {
+  width: 100%;
+  height: 90px;
+  line-height: 90px;
+  text-align: center;
+  border: 1px solid #d9e0e2;
+  font-size: 24px;
+  background-color: #eee;
+  color: #777;
+}
+.center-stories .ad p {
+  text-align: center;
+}
+.center-stories {
+  border: 1px solid #d9e0e2;
+  background-color: white
+}
+
+/* Top Stories */
+.top-stories {
+  padding: 30px;
+}
+.main-story {
+  width: 66.67%;
+  padding-right: 18px;
+  float: left;
+}
+.main-story img {
+  margin-bottom: 15px;
+}
+.side-stories {
+  width: 33.33%;
+  padding-left: 15px;
+  float: left;
+}
+.side-stories article {
+  margin-bottom: 30px;
+}
+.scale-img {
+  width: 100%;
+}
+.author {
+  clear: both;
+}
+
+/* Announcement */
+.announcement {
+  clear: both;
+  position: relative;
+  width: 100%;
+  background: #fafbfc;
+  border-bottom: 1px solid #eceff0;
+  border-top: 1px solid #eceff0;
+  display: block;
+  font: normal 400 1em/3.2em 'Source Sans Pro', sans-serif;
+  color: #4e5860;
+}
+.announcement div {
+  background: #ff3c1f;
+  min-height: 3.2em;
+  float: left;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0;
+  padding: 0 1em;
+  display: block;
+  font: normal 400 0.9em/3.6em 'Source Sans Pro', sans-serif;
+}
+.announcement p {
+  min-height: 3.2em;
+  padding: 0 1.2em;
+  margin-bottom: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: block;
+  font: normal 400 0.9em/3.6em 'Source Sans Pro', sans-serif;
+  color: #4e5860;
+}
+
+/* Other stories */
+.other-stories {
+  padding-top: 30px;
+}
+.other-stories > div {
+  width: 50%;
+  float: left;
+  margin-bottom: 30px;
+}
+.other-stories:after {
+  content: ".";
+  height: 0;
+  visibility: hidden;
+}
+.left-story-holder {
+  padding-left: 30px;
+  padding-right: 15px;
+  clear: both;
+}
+.right-story-holder {
+  padding-left: 15px;
+  padding-right: 30px;
+}
+
+/* Pagination */
+.pagination {
+  height: 96px;
+  padding: 22px 30px;
+  border-bottom: 1px solid rgb(236, 239, 240);
+}
+.pagination p {
+  margin-bottom: 16px;
+  height: 35px;
+  width: 91.5px;
+  line-height: 35px;
+  text-align: center;
+  float: right;
+}
+
+/*
+  ========================================
+  Footer
+  ========================================
+*/
+footer nav {
+  padding: 22px;
+  border-bottom: 1px solid rgb(236, 239, 240);
+}
+footer nav p {
+  line-height: 28px;
+  text-align: center;
+}
+.copyright {
+  padding: 6px 0 13px 0;
+}
+.copyright > p {
+  height: 23px;
+  text-align: center;
+  font-size: 12px;
+  color: #aeaeae;
+}
+
+/*
+  ========================================
+  Typograph
+  ========================================
+*/
+.center-stories a {
+  text-decoration: none;
+}
+.ad-wrapper p {
+  color: rgb(239, 68, 35);
+  font: normal 13px 'Source Sans Pro', sans-serif;
+}
+.author {
+  color: #a6abaf;
+  font: italic normal 13px 'FF Tisa', Georgia, serif;
+}
+.author a {
+  color: #ff3c1f;
+  font: normal bold 12px/25px 'Fjalla One';
+  text-transform: uppercase;
+  text-decoration: none solid rgb(255, 60, 31);
+  font-weight: 700;
+}
+.main-story .title a {
+  color: #010101;
+  font: normal 200 2.2em/1.2em 'Source Sans Pro', sans-serif;
+  text-align: left;
+  zoom: 1;
+}
+.main-story .synopse {
+  color: #4e5860;
+  font: normal 400 1em/1.6em "FF Tisa", Georgia, serif;
+}
+.main-story .synopse a {
+  color: #ff3c1f;
+}
+.side-stories .title a {
+  color: #26313b;
+  font: normal 400 1.1em/1.25em 'Source Sans Pro', sans-serif;
+}
+.other-stories .title a {
+  color: #26313b;
+  font: normal 100 1.3em/1.25em 'Source Sans Pro', sans-serif;
+}
+.main-story a:hover,
+.side-stories a:hover,
+.other-stories a:hover,
+.announcement:hover p {
+  color: #ff3c1f;
+}
+
+.pagination a {
+  font: normal bold 14px 'Source Sans Pro', sans-serif;
+  color: rgb(78, 88, 96);
+}
+footer a {
+  margin-right: 20px;
+  color: #879096;
+  text-decoration: none;
+  font: normal 400 0.9em/1.8em 'Source Sans Pro', sans-serif;
+}
+
+/*
+  ========================================
+  Responsive Styling
+  ========================================
+*/
+@media screen and (max-width: 1145px) {
+  .stories-wrapper {
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .stories-wrapper {
+    margin: 0 auto;
+  }
+  .sidebar {
+    display: none;
+  }
+  .stories {
+    margin-left: 0;
+    padding-top: 9.6px;
+  }
+  .ad {
+    height: 128px;
+    padding-bottom: 10px;
+  }
+  .copyright > p {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 835px) {
+  .stories-wrapper {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .top-stories {
+    padding: 20px;
+  }
+  .main-story,
+  .side-stories,
+  .other-stories > div {
+    float: none;
+    width: auto;
+  }
+  .main-story {
+    padding-right: 0;
+    margin-bottom: 22px;
+  }
+  .side-stories {
+    padding-left: 0;
+  }
+  .other-stories {
+    padding: 20px;
+  }
+  .left-story-holder,
+  .right-story-holder {
+    padding: 0
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .stories {
+    padding-top: 20px;
+  }
+  .stories-wrapper {
+    margin: 0;
+  }
+  .stories-wrapper .ad:first-of-type {
+    display: none;
+  }
+  .top-stories {
+    padding: 10px;
+  }
+  .other-stories {
+    padding: 10px;
+  }
+  footer nav {
+    border-bottom: 0;
+  }
+  footer a {
+    border-bottom: 1px solid rgb(230, 230, 230);
+    height: 43px;
+    line-height: 43px;
+    width: 50%;
+    float: left;
+    margin-right: 0;
+  }
+  .copyright {
+    clear: both;
+  }
+  .main-story .title a {
+    color: #010101;
+    font: normal 200 1.6em/1.3em 'Source Sans Pro', sans-serif;
+    text-align: left;
+    zoom: 1;
+  }
+  .main-story .title a:hover {
+    color: #ff3c1f;
+  }
+}
